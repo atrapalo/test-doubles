@@ -23,7 +23,6 @@ class RemoveBookInteractorTest extends PHPUnit_Framework_TestCase
         /** @link https://github.com/padraic/mockery/blob/master/docs/06-EXPECTATION%20DECLARATIONS.md */
         $bookRepository
             ->shouldReceive('find')
-            ->once()
             ->andReturnUsing(function($aTitle) use ($aListOfBooks) {
                 if (isset($aListOfBooks[$aTitle])) {
                     return $aListOfBooks[$aTitle];
@@ -34,7 +33,6 @@ class RemoveBookInteractorTest extends PHPUnit_Framework_TestCase
         /** @link https://github.com/padraic/mockery/blob/master/docs/07-ARGUMENT-VALIDATION.md */
         $bookRepository
             ->shouldReceive('remove')
-            ->once()
             ->with(
                 Mockery::on(function(Book $aBook) use (&$aListOfBooks) {
                     if (isset($aListOfBooks[$aBook->getTitle()])) {
