@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<phpunit colors="true"
+         printerFile="vendor/whatthejeff/nyancat-phpunit-resultprinter/src/NyanCat/PHPUnit/ResultPrinter.php"
+         printerClass="NyanCat\PHPUnit\ResultPrinter"
+         strict="true"
+         verbose="true">
+
+    <php>
+        <ini name="date.timezone" value="Europe/Madrid" />
+    </php>
+
+    <testsuites>
+        <testsuite name="TestDoubles">
+            <directory>./tests</directory>
+        </testsuite>
+    </testsuites>
+
+    <listeners>
+        <listener class="\Mockery\Adapter\Phpunit\TestListener" />
+    </listeners>
+
+ </phpunit>
