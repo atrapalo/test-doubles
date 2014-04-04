@@ -2,7 +2,7 @@
 
 namespace Atrapalo\Trainings\TestDoubles\Sample4;
 
-class UserBirthdayGreeting
+class BirthdayGreeter
 {
     /**
      * @var EmailService

@@ -15,6 +15,22 @@ class Book
     private $author;
 
     /**
+     * @return string
+     */
+    public function getAuthor()
+    {
+        return $this->author;
+    }
+
+    /**
+     * @return string
+     */
+    public function getTitle()
+    {
+        return $this->title;
+    }
+
+    /**
      * Class constructor
      *
      * @param string $author

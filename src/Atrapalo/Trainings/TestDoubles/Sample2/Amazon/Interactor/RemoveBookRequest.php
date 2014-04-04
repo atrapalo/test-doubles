@@ -1,5 +1,7 @@
 <?php
 
+namespace Atrapalo\Trainings\TestDoubles\Sample2\Amazon\Interactor;
+
 class RemoveBookRequest
 {
     /**

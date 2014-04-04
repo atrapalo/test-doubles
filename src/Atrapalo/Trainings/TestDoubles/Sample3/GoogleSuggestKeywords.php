@@ -3,19 +3,19 @@
 namespace Atrapalo\Trainings\TestDoubles\Sample3;
 
 use Exception;
-use GuzzleHttp\Client;
+use GuzzleHttp\ClientInterface;
 
 class GoogleSuggestKeywords
 {
     /**
-     * @var Client
+     * @var ClientInterface
      */
     private $client;
 
     /**
-     * @param Client $client
+     * @param \GuzzleHttp\Client|ClientInterface $client
      */
-    public function __construct(Client $client)
+    public function __construct(ClientInterface $client)
     {
         $this->client = $client;
     }
