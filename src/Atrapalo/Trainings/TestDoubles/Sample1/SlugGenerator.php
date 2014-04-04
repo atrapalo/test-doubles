@@ -1,6 +1,6 @@
 <?php
 
-namespace Atrapalo\Trainings\TestDoubles\Sample1\SlugGenerator;
+namespace Atrapalo\Trainings\TestDoubles\Sample1;
 
 class SlugGenerator
 {
